@@ -54,8 +54,8 @@ const TodoApp = () => {
       case "Completed":
         setFilterTodo(todos.filter(tdo => tdo.isCompleted));
         break;
-      case "Uncomplted":
-        setFilterTodo(todos.filter(todo => !todo.isCompleted));
+      case "Uncompleted":
+        setFilterTodo(todos.filter(t => t.isCompleted === false));
         break;
       default: setFilterTodo(todos);
     }
@@ -65,7 +65,7 @@ const TodoApp = () => {
     filterHandler(e.target.value);
 }
   return (
-    <div>
+    <div className="todo-app">
       <NavBar status={status} selectHandler={selectHandler} />
       <TodoForm addTodoHandler={addTodoHandler} />
       <TodoList

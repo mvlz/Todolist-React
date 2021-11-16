@@ -22,15 +22,16 @@ const TodoForm = (props) => {
         inputRef.current.focus();
     },[])
     return (
-        <form onSubmit={submitHandler}>
+        <form onSubmit={submitHandler} className="todo-form">
             <input
                 type="text"
                 placeholder={props.edit ? "New Title" : "Add task ..."}
                 value={todo}
                 onChange={addHandler}
                 ref={inputRef}
+                className="todo-input"
             />
-            <button type="submit">
+            <button type="submit" className="todo-btn">
                 {props.edit ? "Done" : "Add"}
             </button>
         </form>

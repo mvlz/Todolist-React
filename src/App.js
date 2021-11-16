@@ -4,7 +4,7 @@ import TodoApp from './TodoApp';
 function App() {
   return (
     <div className="App">
-      <h2>Hello world</h2>
+      <h2 className="app-name">TO-DO List</h2>
       <TodoApp/>
     </div>
   );
