@@ -1,39 +1,40 @@
-.App{
-  background-color: #F0F0F0;
+.App {
+  background-color: #f0f0f0;
   width: calc(100% - 4rem);
   height: calc(100vh - 4rem);
   padding: 2rem;
 }
-.completed{
+.completed {
   text-decoration: line-through;
   color: rgba(0, 0, 0, 40%);
 }
-.select{
+.select {
   width: 10rem;
   background-color: rgba(255, 0, 0, 0.205);
   border: none;
   outline: none;
-  border-left: red 2px solid;
+  border-left: #ec9292 2px solid;
   padding: 0.3rem;
   border-radius: 4px;
 }
-.todo-app{
+.todo-app {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  height: calc(100% - 10rem);
 }
-.app-name{
+.app-name {
   margin: 1rem 0;
 }
-.todo-input{
+.todo-input {
   background-color: transparent;
   border: none;
-  border-bottom: red 2px solid;
+  border-bottom: #ec9292  2px solid;
   outline: none;
-  padding:  0.5rem;
+  padding: 0.5rem;
 }
-.todo-btn{
-  background-color: red;
+.todo-btn {
+  background-color: #ec9292 ;
   padding: 0.5rem;
   color: white;
   border-radius: 5px 5px 5px 0px;
@@ -44,45 +45,57 @@
   display: flex;
   align-items: end;
 }
-.check-btn{
+.check-btn {
   width: 1rem;
   height: 1rem;
-  border: 2px solid red;
+  border: 2px solid white;
   border-radius: 3px;
   cursor: pointer;
+  background-color: transparent;
 }
-.completed-btn{
-  background-color: red;width: 1rem;
+.completed-btn {
+  background-color: white;
+  width: 1rem;
   height: 1rem;
-  border: 2px solid red;
+  border: 2px solid white;
   border-radius: 3px;
   cursor: pointer;
 }
-.btn{
+.btn {
   border: none;
   outline: none;
   background-color: transparent;
   margin-right: 0.5rem;
   cursor: pointer;
 }
-.todo-div,.completed{
+.todo-div,
+.completed {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   width: 12rem;
-  background-color: #dadada;
-  padding: 0.2rem 0.5rem;
-  border-radius: 5px;
+  background-color: #ec9292;
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  color: white;
   margin: 0.5rem 0;
-  box-shadow: 1px 5px 9px -8px black;
+  box-shadow: 0px 15px 16px -10px #943e3e8a;
 }
-.Todo-btns{
+.Todo-btns {
   height: 4rem;
   width: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.Todo-btns > div{
+.Todo-btns > div {
   display: flex;
+}
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  align-content: flex-start;
+  gap: 0.75rem;
 }

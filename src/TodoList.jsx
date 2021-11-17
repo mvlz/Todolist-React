@@ -24,7 +24,7 @@ const TodoList = ({ todos, completeHandler, deleteHandler,updateTodo }) => {
     )
   }
   if (todos.length === 0) return <p>Add some tasks</p>;
-  return <div> {edit.id ? <TodoForm addTodoHandler={updateHandler} edit={edit} /> : render()} </div> 
+  return <div className="todo-container"> {edit.id ? <TodoForm addTodoHandler={updateHandler} edit={edit} /> : render()} </div> 
 };
 
 export default TodoList;
