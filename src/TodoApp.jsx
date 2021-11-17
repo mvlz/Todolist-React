@@ -66,7 +66,7 @@ const TodoApp = () => {
 }
   return (
     <div className="todo-app">
-      <NavBar status={status} selectHandler={selectHandler} />
+      <NavBar status={status} selectHandler={selectHandler} UncompletedTodos={todos.filter(t=> !t.isCompleted).length} />
       <TodoForm addTodoHandler={addTodoHandler} />
       <TodoList
         todos={filterTodo}

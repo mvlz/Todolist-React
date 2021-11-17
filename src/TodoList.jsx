@@ -23,7 +23,7 @@ const TodoList = ({ todos, completeHandler, deleteHandler,updateTodo }) => {
         })
     )
   }
-  if (todos.length === 0) return <p>Add some tasks</p>;
+  if (todos.length === 0) return <p className="empty-todo">Nothing is here!</p>;
   return <div className="todo-container"> {edit.id ? <TodoForm addTodoHandler={updateHandler} edit={edit} /> : render()} </div> 
 };
 
